@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <Pane onDragDetected="#imgClose" opacity="0.78" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fx:id="closeImage" fitHeight="25.0" fitWidth="25.0" layoutX="567.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/remove.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="12.0" prefHeight="17.0" prefWidth="34.0" text="Login" textFill="WHITE" />
+            <Label layoutX="48.0" layoutY="183.0" prefHeight="36.0" prefWidth="107.0" text="User Name :" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="233.0" prefHeight="36.0" prefWidth="107.0" text="Password    :" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUserName" layoutX="187.0" layoutY="189.0" prefHeight="25.0" prefWidth="212.0" />
+            <TextField fx:id="txtPassword" layoutX="187.0" layoutY="239.0" prefHeight="25.0" prefWidth="212.0" />
+            <JFXButton fx:id="btnCancel" layoutX="292.0" layoutY="329.0" onAction="#Cancel" prefHeight="36.0" prefWidth="107.0" style="-fx-background-color: #464B9D; -fx-border-color: #9980FA; -fx-border-radius: 5;" text="cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnLogin" layoutX="435.0" layoutY="329.0" onAction="#LogIn" prefHeight="36.0" prefWidth="107.0" style="-fx-background-color: #464B9D; -fx-border-color: #9980FA; -fx-border-radius: 5;" text="Log In" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="131.0" fitWidth="138.0" layoutX="231.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/avatar.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblError" layoutX="213.0" layoutY="160.0" prefHeight="17.0" prefWidth="175.0" textFill="RED" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

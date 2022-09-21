@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="958.0" prefWidth="1300.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminInterfaceController">
+   <children>
+      <Label fx:id="lblUser1" layoutY="-3.0" opacity="0.21" prefHeight="34.0" prefWidth="1300.0" style="-fx-background-color: white; -fx-background-radius: 0 0 10 10;" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label opacity="0.05" prefHeight="958.0" prefWidth="1300.0" style="-fx-background-color: white;" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="249.0" layoutY="294.0" prefHeight="45.0" prefWidth="130.0" text="Parked " textFill="#fffafa">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="77.0" fitWidth="75.0" layoutX="60.0" layoutY="693.0" opacity="0.6" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/4.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="77.0" fitWidth="75.0" layoutX="60.0" layoutY="826.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/3.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="243.0" layoutY="504.0" prefHeight="53.0" prefWidth="145.0" text="Drivers" textFill="#fffafa">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="45.0" layoutY="504.0" prefHeight="53.0" prefWidth="145.0" text="Vehicles" textFill="#fffafa">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" prefHeight="34.0" prefWidth="97.0" text="Current User :" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUser" layoutX="118.0" prefHeight="34.0" prefWidth="75.0" text="     Admin" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="27.0" layoutY="84.0" prefHeight="39.0" prefWidth="232.0" text="View Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Separator layoutX="449.0" layoutY="123.0" orientation="VERTICAL" prefHeight="801.0" prefWidth="0.0" />
+      <Label alignment="CENTER" layoutX="29.0" layoutY="608.0" prefHeight="39.0" prefWidth="137.0" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="170.0" layoutY="705.0" prefHeight="53.0" prefWidth="215.0" style="-fx-border-color: #13c6dd; -fx-border-radius: 5;" text="Add Vehicle" textFill="#fffafa">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="170.0" layoutY="837.0" prefHeight="53.0" prefWidth="215.0" style="-fx-border-color: #13c6dd; -fx-border-radius: 5;" text="Add Driver" textFill="#fffafa">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="contextAnchorPane" layoutX="477.0" layoutY="40.0" prefHeight="866.0" prefWidth="804.0">
+         <children>
+            <ImageView fitHeight="305.0" fitWidth="761.0" layoutX="22.0" layoutY="300.0" opacity="0.67" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/new.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="99.0" layoutY="408.0" prefHeight="34.0" prefWidth="106.0" text="Quick Details" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="453.0" prefHeight="34.0" prefWidth="112.0" text="Total Vehicles" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="244.0" layoutY="453.0" prefHeight="34.0" prefWidth="112.0" text="Total Drivers" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="424.0" layoutY="453.0" prefHeight="34.0" prefWidth="112.0" text="Vehi. on delivery" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="625.0" layoutY="453.0" prefHeight="34.0" prefWidth="112.0" text="In the basement" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="66.0" layoutY="497.0" opacity="0.29" prefHeight="77.0" prefWidth="67.0" style="-fx-background-color: black; -fx-background-radius: 5;" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="252.0" layoutY="497.0" opacity="0.29" prefHeight="77.0" prefWidth="67.0" style="-fx-background-color: black; -fx-background-radius: 5;" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="447.0" layoutY="497.0" opacity="0.29" prefHeight="77.0" prefWidth="67.0" style="-fx-background-color: black; -fx-background-radius: 5;" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="648.0" layoutY="497.0" opacity="0.29" prefHeight="77.0" prefWidth="67.0" style="-fx-background-color: black; -fx-background-radius: 5;" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDelivery" alignment="CENTER" layoutX="447.0" layoutY="497.0" prefHeight="77.0" prefWidth="67.0" text="--" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblBasement" alignment="CENTER" layoutX="648.0" layoutY="497.0" prefHeight="77.0" prefWidth="67.0" text="--" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDriver" alignment="CENTER" layoutX="252.0" layoutY="497.0" prefHeight="77.0" prefWidth="67.0" text="--" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotal" alignment="CENTER" layoutX="66.0" layoutY="497.0" prefHeight="77.0" prefWidth="67.0" text="--" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="1194.0" layoutY="912.0" onAction="#logOutOnAction" prefHeight="34.0" prefWidth="91.0" style="-fx-border-color: red; -fx-border-radius: 10;" text="Log Out" textFill="#18bdff">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="1270.0" layoutY="5.0" onMouseClicked="#exitOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/remove.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="53.0" layoutY="294.0" prefHeight="45.0" prefWidth="130.0" text="On Delivery" textFill="#fffafa">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Circle fx:id="Image1" fill="DODGERBLUE" layoutX="117.0" layoutY="214.0" radius="56.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="Image2" fill="DODGERBLUE" layoutX="314.0" layoutY="214.0" radius="56.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="Image3" fill="DODGERBLUE" layoutX="118.0" layoutY="432.0" radius="56.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="Image4" fill="DODGERBLUE" layoutX="316.0" layoutY="432.0" radius="56.0" stroke="BLACK" strokeType="INSIDE" />
+      <JFXButton fx:id="btnDelivery" buttonType="RAISED" layoutX="39.0" layoutY="144.0" onAction="#onDeliveryOnAction" onMouseEntered="#OnDelivery" opacity="0.1" prefHeight="208.0" prefWidth="158.0" style="-fx-background-color: White; -fx-background-radius: 5; -fx-border-color: #13c6dd; -fx-border-radius: 5;" text="." textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="235.0" layoutY="144.0" onAction="#parkedOnaction" opacity="0.1" prefHeight="208.0" prefWidth="158.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-color: #13c6dd; -fx-border-radius: 5;" text="." textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="365.0" onAction="#VehicleOnAction" opacity="0.1" prefHeight="208.0" prefWidth="158.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-color: #13c6dd; -fx-border-radius: 5;" text="." textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="236.0" layoutY="365.0" onAction="#driverOnAction" opacity="0.1" prefHeight="208.0" prefWidth="158.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-color: #13c6dd; -fx-border-radius: 5;" text="." textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="42.0" layoutY="680.0" onAction="#addVehicleOnAction" opacity="0.1" prefHeight="103.0" prefWidth="358.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-border-color: #13c6dd; -fx-border-radius: 15;" text="." textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="42.0" layoutY="812.0" onAction="#addDriverOnAction" opacity="0.1" prefHeight="103.0" prefWidth="358.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-border-color: #13c6dd; -fx-border-radius: 15;" text="." textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

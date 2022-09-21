@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="866.0" prefWidth="804.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDriverController">
+   <children>
+      <Label layoutX="14.0" layoutY="105.0" opacity="0.1" prefHeight="533.0" prefWidth="790.0" style="-fx-background-color: white; -fx-background-radius: 7;" />
+      <Label opacity="0.05" prefHeight="866.0" prefWidth="806.0" style="-fx-background-color: white;" />
+      <Label layoutX="38.0" layoutY="61.0" prefHeight="31.0" prefWidth="111.0" text="Add Driver" textFill="#c5d2da">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="173.0" prefHeight="31.0" prefWidth="143.0" text="Driver Name      :" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="239.0" prefHeight="31.0" prefWidth="143.0" text="NIC                     :" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="305.0" prefHeight="31.0" prefWidth="164.0" text="Driving License No :" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="383.0" prefHeight="31.0" prefWidth="143.0" text="Address              :" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="504.0" prefHeight="31.0" prefWidth="143.0" text="Contact No       :" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="314.0" layoutY="174.0" prefHeight="25.0" prefWidth="328.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNIC" layoutX="314.0" layoutY="240.0" prefHeight="25.0" prefWidth="328.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDrivingLicenseNum" layoutX="314.0" layoutY="306.0" prefHeight="25.0" prefWidth="328.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAddress" layoutX="314.0" layoutY="383.0" prefHeight="77.0" prefWidth="328.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtContact" layoutX="314.0" layoutY="505.0" prefHeight="25.0" prefWidth="328.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <JFXButton layoutX="541.0" layoutY="591.0" onAction="#driverAddOnAction" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: #309A78;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="56.0" layoutY="705.0" prefHeight="34.0" prefWidth="112.0" text="Total Vehicles" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="251.0" layoutY="705.0" prefHeight="34.0" prefWidth="112.0" text="Total Drivers" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="431.0" layoutY="705.0" prefHeight="34.0" prefWidth="112.0" text="Vehi. on delivery" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="625.0" layoutY="705.0" prefHeight="34.0" prefWidth="112.0" text="In the basement" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="260.0" layoutY="750.0" opacity="0.29" prefHeight="77.0" prefWidth="67.0" style="-fx-background-color: white; -fx-background-radius: 5;" textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="454.0" layoutY="750.0" opacity="0.29" prefHeight="77.0" prefWidth="67.0" style="-fx-background-color: white; -fx-background-radius: 5;" textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="648.0" layoutY="750.0" opacity="0.29" prefHeight="77.0" prefWidth="67.0" style="-fx-background-color: white; -fx-background-radius: 5;" textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="66.0" layoutY="750.0" opacity="0.29" prefHeight="77.0" prefWidth="67.0" style="-fx-background-color: white; -fx-background-radius: 5;" textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblVTotal" alignment="CENTER" layoutX="66.0" layoutY="750.0" prefHeight="77.0" prefWidth="67.0" text="--" textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBasement" alignment="CENTER" layoutX="648.0" layoutY="750.0" prefHeight="77.0" prefWidth="67.0" text="--" textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDelivery" alignment="CENTER" layoutX="454.0" layoutY="750.0" prefHeight="77.0" prefWidth="67.0" text="--" textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDriver" alignment="CENTER" layoutX="260.0" layoutY="750.0" prefHeight="77.0" prefWidth="67.0" text="--" textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
